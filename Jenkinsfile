@@ -9,9 +9,9 @@ pipeline {
                     echo "JDK Version: ${jdkVersion}"
                 }
                 script {
-                    sh ``` neofetch
+                    neofetch
                     time
-                    ```
+                    
                 }
             }
         }
