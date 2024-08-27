@@ -10,12 +10,11 @@ pipeline {
                 }
             }
             }
-        stage("neofetch") {
+        stage('neofetch') {
             steps{
                 
                 script {
-                    neofetch
-                    time
+                    sh 'neofetch'
                     
                 }
             }
