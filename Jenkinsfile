@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     stages {
-        stage('Test JDK Version') {
+        stage('Test JDK Version 2') {
             steps {
                 script {
                     def jdkVersion = sh(script: 'java -version 2>&1 | awk -F[\\\"_] \'NR==1{print $2}\'', returnStdout: true).trim()
